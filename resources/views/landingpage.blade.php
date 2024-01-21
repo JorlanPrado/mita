@@ -16,12 +16,32 @@
 
         <!-- Bootstrap Icons -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.19.0/font/bootstrap-icons.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js'></script>
 
         <!-- Styles -->
         <style>
+
+            body, html {
+                height: 100%;
+                margin: 0;
+                overflow: hidden;
+            }
+            footer {
+                background-color: #343a40; /* Change this to your preferred background color */
+                color: white;
+                text-align: center;
+                padding: 10px;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+            }
+
+            
+
+            
 
             
 
@@ -78,399 +98,398 @@
                 font-size: 20px;
             }
 
-
-
-            /* body{margin-top:20px;} */
-            /*************** 1.Variables ***************/
-
-
-            /* ------------------ Color Pallet ------------------ */
-
-
-            /*************** 2.Mixins ***************/
-
-
-            /************************************************
-                ************************************************
-                                                    Search Box
-                ************************************************
-            ************************************************/
-
             .chat-search-box {
-                -webkit-border-radius: 3px 0 0 0;
-                -moz-border-radius: 3px 0 0 0;
-                border-radius: 3px 0 0 0;
-                padding: .75rem 1rem;
-            }
+    -webkit-border-radius: 3px 0 0 0;
+    -moz-border-radius: 3px 0 0 0;
+    border-radius: 3px 0 0 0;
+    padding: .75rem 1rem;
+}
 
-            .chat-search-box .input-group .form-control {
-                -webkit-border-radius: 2px 0 0 2px;
-                -moz-border-radius: 2px 0 0 2px;
-                border-radius: 2px 0 0 2px;
-                border-right: 0;
-            }
+.chat-search-box .input-group .form-control {
+    -webkit-border-radius: 2px 0 0 2px;
+    -moz-border-radius: 2px 0 0 2px;
+    border-radius: 2px 0 0 2px;
+    border-right: 0;
+}
 
-            .chat-search-box .input-group .form-control:focus {
-                border-right: 0;
-            }
+.chat-search-box .input-group .form-control:focus {
+    border-right: 0;
+}
 
-            .chat-search-box .input-group .input-group-btn .btn {
-                -webkit-border-radius: 0 2px 2px 0;
-                -moz-border-radius: 0 2px 2px 0;
-                border-radius: 0 2px 2px 0;
-                margin: 0;
-            }
+.chat-search-box .input-group .input-group-btn .btn {
+    -webkit-border-radius: 0 2px 2px 0;
+    -moz-border-radius: 0 2px 2px 0;
+    border-radius: 0 2px 2px 0;
+    margin: 0;
+}
 
-            .chat-search-box .input-group .input-group-btn .btn i {
-                font-size: 1.2rem;
-                line-height: 100%;
-                vertical-align: middle;
-            }
+.chat-search-box .input-group .input-group-btn .btn i {
+    font-size: 1.2rem;
+    line-height: 100%;
+    vertical-align: middle;
+}
 
-            @media (max-width: 767px) {
-                .chat-search-box {
-                    display: none;
-                }
-            }
-
-
-            /************************************************
-                ************************************************
-                                                Users Container
-                ************************************************
-            ************************************************/
-
-            .users-container {
-                position: relative;
-                padding: 1rem 0;
-                border-right: 1px solid #e6ecf3;
-                height: 100%;
-                display: -ms-flexbox;
-                display: flex;
-                -ms-flex-direction: column;
-                flex-direction: column;
-            }
+@media (max-width: 767px) {
+    .chat-search-box {
+        display: none;
+    }
+}
 
 
-            /************************************************
-                ************************************************
-                                                        Users
-                ************************************************
-            ************************************************/
+/************************************************
+	************************************************
+									Users Container
+	************************************************
+************************************************/
 
-            .users {
-                padding: 0;
-            }
-
-            .users .person {
-                position: relative;
-                width: 100%;
-                padding: 10px 1rem;
-                cursor: pointer;
-                border-bottom: 1px solid #f0f4f8;
-            }
-
-            .users .person:hover {
-                background-color: #ffffff;
-                /* Fallback Color */
-                background-image: -webkit-gradient(linear, left top, left bottom, from(#e9eff5), to(#ffffff));
-                /* Saf4+, Chrome */
-                background-image: -webkit-linear-gradient(right, #e9eff5, #ffffff);
-                /* Chrome 10+, Saf5.1+, iOS 5+ */
-                background-image: -moz-linear-gradient(right, #e9eff5, #ffffff);
-                /* FF3.6 */
-                background-image: -ms-linear-gradient(right, #e9eff5, #ffffff);
-                /* IE10 */
-                background-image: -o-linear-gradient(right, #e9eff5, #ffffff);
-                /* Opera 11.10+ */
-                background-image: linear-gradient(right, #e9eff5, #ffffff);
-            }
-
-            .users .person.active-user {
-                background-color: #ffffff;
-                /* Fallback Color */
-                background-image: -webkit-gradient(linear, left top, left bottom, from(#f7f9fb), to(#ffffff));
-                /* Saf4+, Chrome */
-                background-image: -webkit-linear-gradient(right, #f7f9fb, #ffffff);
-                /* Chrome 10+, Saf5.1+, iOS 5+ */
-                background-image: -moz-linear-gradient(right, #f7f9fb, #ffffff);
-                /* FF3.6 */
-                background-image: -ms-linear-gradient(right, #f7f9fb, #ffffff);
-                /* IE10 */
-                background-image: -o-linear-gradient(right, #f7f9fb, #ffffff);
-                /* Opera 11.10+ */
-                background-image: linear-gradient(right, #f7f9fb, #ffffff);
-            }
-
-            .users .person:last-child {
-                border-bottom: 0;
-            }
-
-            .users .person .user {
-                display: inline-block;
-                position: relative;
-                margin-right: 10px;
-            }
-
-            .users .person .user img {
-                width: 48px;
-                height: 48px;
-                -webkit-border-radius: 50px;
-                -moz-border-radius: 50px;
-                border-radius: 50px;
-            }
-
-            .users .person .user .status {
-                width: 10px;
-                height: 10px;
-                -webkit-border-radius: 100px;
-                -moz-border-radius: 100px;
-                border-radius: 100px;
-                background: #e6ecf3;
-                position: absolute;
-                top: 0;
-                right: 0;
-            }
-
-            .users .person .user .status.online {
-                background: #9ec94a;
-            }
-
-            .users .person .user .status.offline {
-                background: #c4d2e2;
-            }
-
-            .users .person .user .status.away {
-                background: #f9be52;
-            }
-
-            .users .person .user .status.busy {
-                background: #fd7274;
-            }
-
-            .users .person p.name-time {
-                font-weight: 600;
-                font-size: .85rem;
-                display: inline-block;
-            }
-
-            .users .person p.name-time .time {
-                font-weight: 400;
-                font-size: .7rem;
-                text-align: right;
-                color: #8796af;
-            }
-
-            @media (max-width: 767px) {
-                .users .person .user img {
-                    width: 30px;
-                    height: 30px;
-                }
-                .users .person p.name-time {
-                    display: none;
-                }
-                .users .person p.name-time .time {
-                    display: none;
-                }
-            }
+.users-container {
+    position: relative;
+    padding: 1rem 0;
+    border-right: 1px solid #e6ecf3;
+    max-height: calc(100vh - 140px);
+    min-height: calc(100vh - 140px);
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    overflow-y: hidden;
+}
+.users-container:hover {
+    overflow-y: auto;
+}
 
 
-            /************************************************
-                ************************************************
-                                                Chat right side
-                ************************************************
-            ************************************************/
+/************************************************
+	************************************************
+											Users
+	************************************************
+************************************************/
 
-            .selected-user {
-                width: 100%;
-                padding: 0 15px;
-                min-height: 64px;
-                line-height: 64px;
-                border-bottom: 1px solid #e6ecf3;
-                -webkit-border-radius: 0 3px 0 0;
-                -moz-border-radius: 0 3px 0 0;
-                border-radius: 0 3px 0 0;
-            }
+.users {
+    padding: 0;
+}
 
-            .selected-user span {
-                line-height: 100%;
-            }
+.users .person {
+    position: relative;
+    width: 100%;
+    padding: 10px 1rem;
+    cursor: pointer;
+    border-bottom: 1px solid #f0f4f8;
+}
 
-            .selected-user span.name {
-                font-weight: 700;
-            }
+.users .person:hover {
+    background-color: #ffffff;
+    /* Fallback Color */
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#e9eff5), to(#ffffff));
+    /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient(right, #e9eff5, #ffffff);
+    /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image: -moz-linear-gradient(right, #e9eff5, #ffffff);
+    /* FF3.6 */
+    background-image: -ms-linear-gradient(right, #e9eff5, #ffffff);
+    /* IE10 */
+    background-image: -o-linear-gradient(right, #e9eff5, #ffffff);
+    /* Opera 11.10+ */
+    background-image: linear-gradient(right, #e9eff5, #ffffff);
+}
 
-            .chat-container {
-                position: relative;
-                padding: 1rem;
-            }
+.users .person.active-user {
+    background-color: #ffffff;
+    /* Fallback Color */
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f7f9fb), to(#ffffff));
+    /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient(right, #f7f9fb, #ffffff);
+    /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image: -moz-linear-gradient(right, #f7f9fb, #ffffff);
+    /* FF3.6 */
+    background-image: -ms-linear-gradient(right, #f7f9fb, #ffffff);
+    /* IE10 */
+    background-image: -o-linear-gradient(right, #f7f9fb, #ffffff);
+    /* Opera 11.10+ */
+    background-image: linear-gradient(right, #f7f9fb, #ffffff);
+}
 
-            .chat-container li.chat-left,
-            .chat-container li.chat-right {
-                display: flex;
-                flex: 1;
-                flex-direction: row;
-                margin-bottom: 40px;
-            }
+.users .person:last-child {
+    border-bottom: 0;
+}
 
-            .chat-container li img {
-                width: 48px;
-                height: 48px;
-                -webkit-border-radius: 30px;
-                -moz-border-radius: 30px;
-                border-radius: 30px;
-            }
+.users .person .user {
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+}
 
-            .chat-container li .chat-avatar {
-                margin-right: 20px;
-            }
+.users .person .user img {
+    width: 48px;
+    height: 48px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+}
 
-            .chat-container li.chat-right {
-                justify-content: flex-end;
-            }
+.users .person .user .status {
+    width: 10px;
+    height: 10px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    background: #e6ecf3;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
 
-            .chat-container li.chat-right > .chat-avatar {
-                margin-left: 20px;
-                margin-right: 0;
-            }
+.users .person .user .status.online {
+    background: #9ec94a;
+}
 
-            .chat-container li .chat-name {
-                font-size: .75rem;
-                color: #999999;
-                text-align: center;
-            }
+.users .person .user .status.offline {
+    background: #c4d2e2;
+}
 
-            .chat-container li .chat-text {
-                padding: .4rem 1rem;
-                -webkit-border-radius: 4px;
-                -moz-border-radius: 4px;
-                border-radius: 4px;
-                background: #ffffff;
-                font-weight: 300;
-                line-height: 150%;
-                position: relative;
-            }
+.users .person .user .status.away {
+    background: #f9be52;
+}
 
-            .chat-container li .chat-text:before {
-                content: '';
-                position: absolute;
-                width: 0;
-                height: 0;
-                top: 10px;
-                left: -20px;
-                border: 10px solid;
-                border-color: transparent #ffffff transparent transparent;
-            }
+.users .person .user .status.busy {
+    background: #fd7274;
+}
 
-            .chat-container li.chat-right > .chat-text {
-                text-align: right;
-            }
+.users .person p.name-time {
+    font-weight: 600;
+    font-size: .85rem;
+    display: inline-block;
+}
 
-            .chat-container li.chat-right > .chat-text:before {
-                right: -20px;
-                border-color: transparent transparent transparent #ffffff;
-                left: inherit;
-            }
+.users .person p.name-time .time {
+    font-weight: 400;
+    font-size: .7rem;
+    text-align: right;
+    color: #8796af;
+}
 
-            .chat-container li .chat-hour {
-                padding: 0;
-                margin-bottom: 10px;
-                font-size: .75rem;
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: center;
-                margin: 0 0 0 15px;
-            }
-
-            .chat-container li .chat-hour > span {
-                font-size: 16px;
-                color: #9ec94a;
-            }
-
-            .chat-container li.chat-right > .chat-hour {
-                margin: 0 15px 0 0;
-            }
-
-            @media (max-width: 767px) {
-                .chat-container li.chat-left,
-                .chat-container li.chat-right {
-                    flex-direction: column;
-                    margin-bottom: 30px;
-                }
-                .chat-container li img {
-                    width: 32px;
-                    height: 32px;
-                }
-                .chat-container li.chat-left .chat-avatar {
-                    margin: 0 0 5px 0;
-                    display: flex;
-                    align-items: center;
-                }
-                .chat-container li.chat-left .chat-hour {
-                    justify-content: flex-end;
-                }
-                .chat-container li.chat-left .chat-name {
-                    margin-left: 5px;
-                }
-                .chat-container li.chat-right .chat-avatar {
-                    order: -1;
-                    margin: 0 0 5px 0;
-                    align-items: center;
-                    display: flex;
-                    justify-content: right;
-                    flex-direction: row-reverse;
-                }
-                .chat-container li.chat-right .chat-hour {
-                    justify-content: flex-start;
-                    order: 2;
-                }
-                .chat-container li.chat-right .chat-name {
-                    margin-right: 5px;
-                }
-                .chat-container li .chat-text {
-                    font-size: .8rem;
-                }
-            }
-
-            .chat-form {
-                padding: 15px;
-                width: 100%;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                background-color: #ffffff;
-                border-top: 1px solid white;
-            }
-
-            ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-            }
-            .card {
-                border: 0;
-                background: #f4f5fb;
-                -webkit-border-radius: 2px;
-                -moz-border-radius: 2px;
-                border-radius: 2px;
-                margin-bottom: 2rem;
-                box-shadow: none;
-            }
-            
-            
+@media (max-width: 767px) {
+    .users .person .user img {
+        width: 30px;
+        height: 30px;
+    }
+    .users .person p.name-time {
+        display: none;
+    }
+    .users .person p.name-time .time {
+        display: none;
+    }
+}
 
 
-            
+/************************************************
+	************************************************
+									Chat right side
+	************************************************
+************************************************/
 
-            
+.selected-user {
+    width: 100%;
+    padding: 0 15px;
+    min-height: 64px;
+    line-height: 64px;
+    border-bottom: 1px solid #e6ecf3;
+    -webkit-border-radius: 0 3px 0 0;
+    -moz-border-radius: 0 3px 0 0;
+    border-radius: 0 3px 0 0;
+}
 
-            
+.selected-user span {
+    line-height: 100%;
+}
 
-            
+.selected-user span.name {
+    font-weight: 700;
+}
+
+.chat-container {
+    position: relative;
+    padding: 1rem;
+    overflow-y: auto; /* Add this line to enable vertical scrolling */
+    max-height: calc(100vh - 285px);
+    min-height: calc(100vh - 285px);
+    flex: 1
+}
+
+.chat-container li.chat-left,
+.chat-container li.chat-right {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    margin-bottom: 40px;
+}
+
+.chat-container li img {
+    width: 48px;
+    height: 48px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+
+.chat-container li .chat-avatar {
+    margin-right: 20px;
+}
+
+.chat-container li.chat-right {
+    justify-content: flex-end;
+}
+
+.chat-container li.chat-right > .chat-avatar {
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+.chat-container li .chat-name {
+    font-size: .75rem;
+    color: #999999;
+    text-align: center;
+}
+
+.chat-container li .chat-text {
+    padding: .4rem 1rem;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background: #ffffff;
+    font-weight: 300;
+    line-height: 150%;
+    position: relative;
+}
+
+.chat-container li .chat-text:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 10px;
+    left: -20px;
+    border: 10px solid;
+    border-color: transparent #ffffff transparent transparent;
+}
+
+.chat-container li.chat-right > .chat-text {
+    text-align: right;
+}
+
+.chat-container li.chat-right > .chat-text:before {
+    right: -20px;
+    border-color: transparent transparent transparent #ffffff;
+    left: inherit;
+}
+
+.chat-container li .chat-hour {
+    padding: 0;
+    margin-bottom: 10px;
+    font-size: .75rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 0 15px;
+}
+
+.chat-container li .chat-hour > span {
+    font-size: 16px;
+    color: #9ec94a;
+}
+
+.chat-container li.chat-right > .chat-hour {
+    margin: 0 15px 0 0;
+}
+
+@media (max-width: 767px) {
+    .chat-container li.chat-left,
+    .chat-container li.chat-right {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .chat-container li img {
+        width: 32px;
+        height: 32px;
+    }
+    .chat-container li.chat-left .chat-avatar {
+        margin: 0 0 5px 0;
+        display: flex;
+        align-items: center;
+    }
+    .chat-container li.chat-left .chat-hour {
+        justify-content: flex-end;
+    }
+    .chat-container li.chat-left .chat-name {
+        margin-left: 5px;
+    }
+    .chat-container li.chat-right .chat-avatar {
+        order: -1;
+        margin: 0 0 5px 0;
+        align-items: center;
+        display: flex;
+        justify-content: right;
+        flex-direction: row-reverse;
+    }
+    .chat-container li.chat-right .chat-hour {
+        justify-content: flex-start;
+        order: 2;
+    }
+    .chat-container li.chat-right .chat-name {
+        margin-right: 5px;
+    }
+    .chat-container li .chat-text {
+        font-size: .8rem;
+    }
+}
+
+.chat-form {
+    padding: 15px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    border-top: 1px solid white;
+    position: fixed;
+    z-index: 1;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.card {
+    border: 0;
+    background: #f4f5fb;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    margin-bottom: 2rem;
+    box-shadow: none;
+}
+.content-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.typingBox{
+    resize: none;
+    height: 60px;
+    width: 98%;
+}
+
+
+
+    
+
+
+
         </style>
 
-        
+
     </head>
     <body class="antialiased">
     <nav class="navbar navbar-expand-lg navbar-dark gradient-custom-2">
@@ -512,11 +531,7 @@
     </div>
     </nav>
 
-
     <div class="container-fluid p-0">
-
-    <!-- Page header start -->
-    <!-- Page header end -->
 
     <!-- Content wrapper start -->
     <div class="content-wrapper">
@@ -603,18 +618,68 @@
                                             <span class="time">05/02/2019</span>
                                         </p>
                                     </li>
+                                    <li class="person" data-chat="person5">
+                                        <div class="user">
+                                            <img src="https://www.bootdey.com/img/Content/avatar/avatar5.png" alt="Retail Admin">
+                                            <span class="status away"></span>
+                                        </div>
+                                        <p class="name-time">
+                                            <span class="name">Michael Jordan</span>
+                                            <span class="time">05/02/2019</span>
+                                        </p>
+                                    </li>
+                                    <li class="person" data-chat="person5">
+                                        <div class="user">
+                                            <img src="https://www.bootdey.com/img/Content/avatar/avatar5.png" alt="Retail Admin">
+                                            <span class="status away"></span>
+                                        </div>
+                                        <p class="name-time">
+                                            <span class="name">Michael Jordan</span>
+                                            <span class="time">05/02/2019</span>
+                                        </p>
+                                    </li>
+                                    <li class="person" data-chat="person5">
+                                        <div class="user">
+                                            <img src="https://www.bootdey.com/img/Content/avatar/avatar5.png" alt="Retail Admin">
+                                            <span class="status away"></span>
+                                        </div>
+                                        <p class="name-time">
+                                            <span class="name">Michael Jordan</span>
+                                            <span class="time">05/02/2019</span>
+                                        </p>
+                                    </li>
+                                    <li class="person" data-chat="person5">
+                                        <div class="user">
+                                            <img src="https://www.bootdey.com/img/Content/avatar/avatar5.png" alt="Retail Admin">
+                                            <span class="status away"></span>
+                                        </div>
+                                        <p class="name-time">
+                                            <span class="name">Michael Jordan</span>
+                                            <span class="time">05/02/2019</span>
+                                        </p>
+                                    </li>
+                                    <li class="person" data-chat="person5">
+                                        <div class="user">
+                                            <img src="https://www.bootdey.com/img/Content/avatar/avatar5.png" alt="Retail Admin">
+                                            <span class="status away"></span>
+                                        </div>
+                                        <p class="name-time">
+                                            <span class="name">Michael Jordan</span>
+                                            <span class="time">05/02/2019</span>
+                                        </p>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-xl-8 col-lg-8 col-md-8 col-sm-9 col-9">
                             <div class="selected-user">
-                                <span>To: <span class="name">Emily Russell</span></span>
+                                <span>To: <span class="name"><a href="https://www.facebook.com/Budongggg" style="text-decoration: none;">Emily Russell</a></span></span>
                             </div>
                             <div class="chat-container">
                                 <ul class="chat-box chatContainerScroll">
                                     <li class="chat-left">
                                         <div class="chat-avatar">
-                                            <img src="https://www.bootdey.com/img/Content/avatar/avatar3.png" alt="Retail Admin">
+                                            <a href="https://www.facebook.com/Budongggg"><img src="https://www.bootdey.com/img/Content/avatar/avatar3.png" alt="Retail Admin"></a>
                                             <div class="chat-name">Russell</div>
                                         </div>
                                         <div class="chat-text">Hello, I'm Russell.
@@ -648,37 +713,49 @@
                                             <div class="chat-name">Joyse</div>
                                         </div>
                                     </li>
-                                    <li class="chat-left">
+                                    <li class="chat-right">
+                                        <div class="chat-hour">08:59 <span class="fa fa-check-circle"></span></div>
+                                        <div class="chat-text">Well I am not sure.
+                                            <br>I have results to show you.</div>
                                         <div class="chat-avatar">
-                                            <img src="https://www.bootdey.com/img/Content/avatar/avatar3.png" alt="Retail Admin">
-                                            <div class="chat-name">Russell</div>
+                                            <img src="https://www.bootdey.com/img/Content/avatar/avatar5.png" alt="Retail Admin">
+                                            <div class="chat-name">Joyse</div>
                                         </div>
-                                        <div class="chat-text">The rest of the team is not here yet.
-                                            <br>Maybe in an hour or so?</div>
-                                        <div class="chat-hour">08:57 <span class="fa fa-check-circle"></span></div>
                                     </li>
                                     <li class="chat-right">
                                         <div class="chat-hour">08:59 <span class="fa fa-check-circle"></span></div>
-                                        <div class="chat-text">Have you faced any problems at the last phase of the project?</div>
+                                        <div class="chat-text">Well I am not sure.
+                                            <br>I have results to show you.</div>
                                         <div class="chat-avatar">
-                                            <img src="https://www.bootdey.com/img/Content/avatar/avatar4.png" alt="Retail Admin">
-                                            <div class="chat-name">Jin</div>
+                                            <img src="https://www.bootdey.com/img/Content/avatar/avatar5.png" alt="Retail Admin">
+                                            <div class="chat-name">Joyse</div>
                                         </div>
                                     </li>
-                                    <li class="chat-left">
+                                    <li class="chat-right">
+                                        <div class="chat-hour">08:59 <span class="fa fa-check-circle"></span></div>
+                                        <div class="chat-text">Well I am not sure.
+                                            <br>I have results to show you.</div>
                                         <div class="chat-avatar">
-                                            <img src="https://www.bootdey.com/img/Content/avatar/avatar3.png" alt="Retail Admin">
-                                            <div class="chat-name">Russell</div>
+                                            <img src="https://www.bootdey.com/img/Content/avatar/avatar5.png" alt="Retail Admin">
+                                            <div class="chat-name">Joyse</div>
                                         </div>
-                                        <div class="chat-text">Actually everything was fine.
-                                            <br>I'm very excited to show this to our team.</div>
-                                        <div class="chat-hour">07:00 <span class="fa fa-check-circle"></span></div>
                                     </li>
+                                    <li class="chat-right">
+                                        <div class="chat-hour">08:59 <span class="fa fa-check-circle"></span></div>
+                                        <div class="chat-text">Well I am not sure.
+                                            <br>I have results to show you.</div>
+                                        <div class="chat-avatar">
+                                            <img src="https://www.bootdey.com/img/Content/avatar/avatar5.png" alt="Retail Admin">
+                                            <div class="chat-name">Joyse</div>
+                                        </div>
+                                    </li>
+                                    
                                 </ul>
-                                <div class="form-group mt-3 mb-0">
-                                    <textarea class="form-control" rows="3" placeholder="Type your message here..."></textarea>
-                                </div>
+                                
                             </div>
+                            <div class="form-group mt-2 mb-2">
+                                    <textarea class="typingBox form-control" rows="3" placeholder="Type your message here..."></textarea>
+                                </div>
                         </div>
                     </div>
                     <!-- Row end -->
@@ -693,6 +770,15 @@
     <!-- Content wrapper end -->
 
 </div>
+
+    
+        
+
+    
+
+    <footer class="bg-dark text-light text-center py-2">
+        <p style>&copy; 2023 Dashboard. All rights reserved.</p>
+    </footer>
 
     
         
