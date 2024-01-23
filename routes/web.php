@@ -30,6 +30,10 @@ Route::get('/homepage', function () {
     return view('landingpage');
 });
 
+Route::get('/userprofile', function () {
+    return view('userprofile');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');

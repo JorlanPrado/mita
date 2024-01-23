@@ -51,10 +51,10 @@
                 background: #fccb90;
 
                 /* Chrome 10-25, Safari 5.1-6 */
-                background: -webkit-linear-gradient(to right, #FE535C, #42C7EA);
+                background: -webkit-linear-gradient(to right, #C850C0, #4158D0);
 
                 /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                background: linear-gradient(to right, #FE535C, #42C7EA);
+                background: linear-gradient(to right, #C850C0, #4158D0);
                 border: none;
             }
 
@@ -71,19 +71,25 @@
             }
 
             .btn-outline-custom-danger {
-                color: #FE5262; /* Text color */
-                border-color: #FE5262; /* Border color */
+                color:  #C850C0; /* Text color */
+                border-color:  #C850C0; /* Border color */
             }
 
             .btn-outline-custom-danger:hover {
                 color: white; /* Text color on hover */
-                background-color: #FE5262; /* Background color on hover */
-                border-color: #FE5262; /* Border color on hover */
+                background-color:  #C850C0; /* Background color on hover */
+                border-color:  #C850C0; /* Border color on hover */
             }
 
             .btn-login{
                 width: 100%;
+                border: none;
             }
+            .section{
+                min-height: calc(100vh - 20px);
+                max-height: calc(100vh - 20px);
+            }
+
 
             
 
@@ -105,15 +111,19 @@
     </head>
     <body class="antialiased">
 
-    <section class="section h-100 gradient-form py-5" style="width: 600px;">
-        <div class="container py-5">
+    <section class="section gradient-form py-3" style="width: 600px;">
+        <div class="container">
             <div class="card rounded-3 text-black">
                 <div class="card-body p-md-5 mx-md-4">
                     <div class="text-center mb-5">
-                        <img src="/img/Lovelobby.png" style="width: 195px;" alt="logo">
+                        <img src="/img/Lovelobbyy.png" style="width: 195px;" alt="logo">
                     </div>
                     <form>
                         <p>Please login to your account</p>
+                        <div class="form-outline mb-4">
+                            <input type="text" id="form2Example11" class="form-control" placeholder="Username" />
+                            <label class="form-label" for="form2Example11">Username</label>
+                        </div>
                         <div class="form-outline mb-4">
                             <input type="email" id="form2Example11" class="form-control" placeholder="Email address" />
                             <label class="form-label" for="form2Example11">Email</label>

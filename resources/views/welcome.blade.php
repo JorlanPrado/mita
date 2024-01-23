@@ -40,10 +40,10 @@
                 background: #fccb90;
 
                 /* Chrome 10-25, Safari 5.1-6 */
-                background: -webkit-linear-gradient(to bottom, #FE535C, #42C7EA);
+                background: -webkit-linear-gradient(to right, #C850C0, #4158D0);
 
                 /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                background: linear-gradient(to bottom, #FE535C, #42C7EA);
+                background: linear-gradient(to right, #C850C0, #4158D0);
             }
 
             .gradient-custom-3 {
@@ -51,10 +51,10 @@
                 background: #fccb90;
 
                 /* Chrome 10-25, Safari 5.1-6 */
-                background: -webkit-linear-gradient(to right, #FE535C, #42C7EA);
+                background: -webkit-linear-gradient(to right, #C850C0, #4158D0);
 
                 /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                background: linear-gradient(to right, #FE535C, #42C7EA);
+                background: linear-gradient(to right, #C850C0, #4158D0);
                 border: none;
             }
 
@@ -71,14 +71,14 @@
             }
 
             .btn-outline-custom-danger {
-                color: #FE5262; /* Text color */
-                border-color: #FE5262; /* Border color */
+                color: #C850C0; /* Text color */
+                border-color: #C850C0; /* Border color */
             }
 
             .btn-outline-custom-danger:hover {
                 color: white; /* Text color on hover */
-                background-color: #FE5262; /* Background color on hover */
-                border-color: #FE5262; /* Border color on hover */
+                background-color: #C850C0; /* Background color on hover */
+                border-color: #C850C0; /* Border color on hover */
             }
 
             .btn-login{
@@ -111,7 +111,7 @@
               <div class="card-body p-md-5 mx-md-4">
 
                 <div class="text-center mb-5">
-                  <img src="/img/Lovelobby.png"
+                  <img src="/img/Lovelobbyy.png"
                     style="width: 195px;" alt="logo">
                 </div>
 

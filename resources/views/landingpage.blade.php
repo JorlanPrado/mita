@@ -19,7 +19,9 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js'></script>
+        <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js'>
+
+        </script>
 
         <!-- Styles -->
         <style>
@@ -88,10 +90,10 @@
                 background: #fccb90;
 
                 /* Chrome 10-25, Safari 5.1-6 */
-                background: -webkit-linear-gradient(to right, #FE535C, #42C7EA);
+                background: -webkit-linear-gradient(to right, #C850C0, #4158D0);
 
                 /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                background: linear-gradient(to right, #FE535C, #42C7EA);
+                background: linear-gradient(to right, #C850C0, #4158D0);
             }
 
             .nav-item{
@@ -494,7 +496,7 @@ ul {
     <body class="antialiased">
     <nav class="navbar navbar-expand-lg navbar-dark gradient-custom-2">
     <div class="container-fluid">
-        <img src="/img/Lovelobby.png" alt="img" class="lovelobby-img mx-3">
+        <img src="/img/Lovelobbyy.png" alt="img" class="lovelobby-img mx-3">
         <h2 class="lovelobby-text mt-2">Love<span class="lobby">Lobby</span></h2>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -520,8 +522,8 @@ ul {
             <!--  <i class="fas fa-user"></i> -->
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#"><i class="fas fa-sliders-h fa-fw"></i> Account</a></li>
-                <li><a class="dropdown-item" href="#"><i class="fas fa-cog fa-fw"></i> Settings</a></li>
+                <li><a class="dropdown-item" href="userprofile"><i class="fa fa-user fa-fw"></i> Profile</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fas fa-cog fa-fw"></i>Account</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="LoveLobby"><i class="fas fa-sign-out-alt fa-fw"></i> Log Out</a></li>
             </ul>
@@ -561,111 +563,111 @@ ul {
                                     <li class="person" data-chat="person1">
                                         <div class="user">
                                             <img src="https://www.bootdey.com/img/Content/avatar/avatar3.png" alt="Retail Admin">
-                                            <span class="status busy"></span>
+                                            <span class="status online"></span>
                                         </div>
                                         <p class="name-time">
                                             <span class="name">Steve Bangalter</span>
-                                            <span class="time">15/02/2019</span>
+                                            <span class="time" style="color: green;">Active Now </span>
                                         </p>
                                     </li>
                                     <li class="person" data-chat="person1">
                                         <div class="user">
                                             <img src="https://www.bootdey.com/img/Content/avatar/avatar1.png" alt="Retail Admin">
-                                            <span class="status offline"></span>
+                                            <span class="status online"></span>
                                         </div>
                                         <p class="name-time">
                                             <span class="name">Steve Bangalter</span>
-                                            <span class="time">15/02/2019</span>
+                                            <span class="time" style="color: green;">Active Now</span>
                                         </p>
                                     </li>
                                     <li class="person active-user" data-chat="person2">
                                         <div class="user">
                                             <img src="https://www.bootdey.com/img/Content/avatar/avatar2.png" alt="Retail Admin">
-                                            <span class="status away"></span>
+                                            <span class="status online"></span>
                                         </div>
                                         <p class="name-time">
                                             <span class="name">Peter Gregor</span>
-                                            <span class="time">12/02/2019</span>
+                                            <span class="time" style="color: green;">Active Now</span>
                                         </p>
                                     </li>
                                     <li class="person" data-chat="person3">
                                         <div class="user">
                                             <img src="https://www.bootdey.com/img/Content/avatar/avatar3.png" alt="Retail Admin">
-                                            <span class="status busy"></span>
+                                            <span class="status online"></span>
                                         </div>
                                         <p class="name-time">
                                             <span class="name">Jessica Larson</span>
-                                            <span class="time">11/02/2019</span>
+                                            <span class="time" style="color: green;">Active Now</span>
                                         </p>
                                     </li>
                                     <li class="person" data-chat="person4">
                                         <div class="user">
                                             <img src="https://www.bootdey.com/img/Content/avatar/avatar4.png" alt="Retail Admin">
-                                            <span class="status offline"></span>
+                                            <span class="status online"></span>
                                         </div>
                                         <p class="name-time">
                                             <span class="name">Lisa Guerrero</span>
-                                            <span class="time">08/02/2019</span>
+                                            <span class="time" style="color: green;">Active Now</span>
                                         </p>
                                     </li>
                                     <li class="person" data-chat="person5">
                                         <div class="user">
                                             <img src="https://www.bootdey.com/img/Content/avatar/avatar5.png" alt="Retail Admin">
-                                            <span class="status away"></span>
+                                            <span class="status online"></span>
                                         </div>
                                         <p class="name-time">
                                             <span class="name">Michael Jordan</span>
-                                            <span class="time">05/02/2019</span>
+                                            <span class="time" style="color: green;">Active Now</span>
                                         </p>
                                     </li>
                                     <li class="person" data-chat="person5">
                                         <div class="user">
                                             <img src="https://www.bootdey.com/img/Content/avatar/avatar5.png" alt="Retail Admin">
-                                            <span class="status away"></span>
+                                            <span class="status online"></span>
                                         </div>
                                         <p class="name-time">
                                             <span class="name">Michael Jordan</span>
-                                            <span class="time">05/02/2019</span>
+                                            <span class="time" style="color: green;">Active Now</span>
                                         </p>
                                     </li>
                                     <li class="person" data-chat="person5">
                                         <div class="user">
                                             <img src="https://www.bootdey.com/img/Content/avatar/avatar5.png" alt="Retail Admin">
-                                            <span class="status away"></span>
+                                            <span class="status online"></span>
                                         </div>
                                         <p class="name-time">
                                             <span class="name">Michael Jordan</span>
-                                            <span class="time">05/02/2019</span>
+                                            <span class="time" style="color: green;">Active Now</span>
                                         </p>
                                     </li>
                                     <li class="person" data-chat="person5">
                                         <div class="user">
                                             <img src="https://www.bootdey.com/img/Content/avatar/avatar5.png" alt="Retail Admin">
-                                            <span class="status away"></span>
+                                            <span class="status online"></span>
                                         </div>
                                         <p class="name-time">
                                             <span class="name">Michael Jordan</span>
-                                            <span class="time">05/02/2019</span>
+                                            <span class="time" style="color: green;">Active Now</span>
                                         </p>
                                     </li>
                                     <li class="person" data-chat="person5">
                                         <div class="user">
                                             <img src="https://www.bootdey.com/img/Content/avatar/avatar5.png" alt="Retail Admin">
-                                            <span class="status away"></span>
+                                            <span class="status online"></span>
                                         </div>
                                         <p class="name-time">
                                             <span class="name">Michael Jordan</span>
-                                            <span class="time">05/02/2019</span>
+                                            <span class="time" style="color: green;">Active Now</span>
                                         </p>
                                     </li>
                                     <li class="person" data-chat="person5">
                                         <div class="user">
                                             <img src="https://www.bootdey.com/img/Content/avatar/avatar5.png" alt="Retail Admin">
-                                            <span class="status away"></span>
+                                            <span class="status online"></span>
                                         </div>
                                         <p class="name-time">
                                             <span class="name">Michael Jordan</span>
-                                            <span class="time">05/02/2019</span>
+                                            <span class="time" style="color: green;">Active Now</span>
                                         </p>
                                     </li>
                                 </ul>
@@ -684,10 +686,10 @@ ul {
                                         </div>
                                         <div class="chat-text">Hello, I'm Russell.
                                             <br>How can I help you today?</div>
-                                        <div class="chat-hour">08:55 <span class="fa fa-check-circle"></span></div>
+                                        <div class="chat-hour">08:55 <span class="fa fa-check-circle mx-2"></span></div>
                                     </li>
                                     <li class="chat-right">
-                                        <div class="chat-hour">08:56 <span class="fa fa-check-circle"></span></div>
+                                        <div class="chat-hour"><span class="fa fa-check-circle mx-2"></span>08:56 </div>
                                         <div class="chat-text">Hi, Russell
                                             <br> I need more information about Developer Plan.</div>
                                         <div class="chat-avatar">
@@ -702,10 +704,10 @@ ul {
                                         </div>
                                         <div class="chat-text">Are we meeting today?
                                             <br>Project has been already finished and I have results to show you.</div>
-                                        <div class="chat-hour">08:57 <span class="fa fa-check-circle"></span></div>
+                                        <div class="chat-hour">08:57 <span class="fa fa-check-circle mx-2"></span></div>
                                     </li>
                                     <li class="chat-right">
-                                        <div class="chat-hour">08:59 <span class="fa fa-check-circle"></span></div>
+                                        <div class="chat-hour"><span class="fa fa-check-circle mx-2"></span>08:59 </div>
                                         <div class="chat-text">Well I am not sure.
                                             <br>I have results to show you.</div>
                                         <div class="chat-avatar">
@@ -714,7 +716,7 @@ ul {
                                         </div>
                                     </li>
                                     <li class="chat-right">
-                                        <div class="chat-hour">08:59 <span class="fa fa-check-circle"></span></div>
+                                        <div class="chat-hour"><span class="fa fa-check-circle mx-2"></span>08:59 </div>
                                         <div class="chat-text">Well I am not sure.
                                             <br>I have results to show you.</div>
                                         <div class="chat-avatar">
@@ -723,7 +725,7 @@ ul {
                                         </div>
                                     </li>
                                     <li class="chat-right">
-                                        <div class="chat-hour">08:59 <span class="fa fa-check-circle"></span></div>
+                                        <div class="chat-hour"><span class="fa fa-check-circle mx-2"></span>08:59 </div>
                                         <div class="chat-text">Well I am not sure.
                                             <br>I have results to show you.</div>
                                         <div class="chat-avatar">
@@ -732,7 +734,7 @@ ul {
                                         </div>
                                     </li>
                                     <li class="chat-right">
-                                        <div class="chat-hour">08:59 <span class="fa fa-check-circle"></span></div>
+                                        <div class="chat-hour"><span class="fa fa-check-circle mx-2"></span>08:59</div>
                                         <div class="chat-text">Well I am not sure.
                                             <br>I have results to show you.</div>
                                         <div class="chat-avatar">
@@ -741,7 +743,7 @@ ul {
                                         </div>
                                     </li>
                                     <li class="chat-right">
-                                        <div class="chat-hour">08:59 <span class="fa fa-check-circle"></span></div>
+                                        <div class="chat-hour"><span class="fa fa-check-circle mx-2"></span>08:59 </div>
                                         <div class="chat-text">Well I am not sure.
                                             <br>I have results to show you.</div>
                                         <div class="chat-avatar">
@@ -769,14 +771,14 @@ ul {
     </div>
     <!-- Content wrapper end -->
 
-</div>
+    </div>
 
     
         
 
     
 
-    <footer class="bg-dark text-light text-center py-2">
+    <footer class="gradient-custom-2 text-light text-center py-2 ">
         <p style>&copy; 2023 Dashboard. All rights reserved.</p>
     </footer>
 
