@@ -13,128 +13,13 @@
 
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="/css/profile.css" />
 
         <!-- Bootstrap Icons -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.19.0/font/bootstrap-icons.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js'></script>
-
-        <!-- Styles -->
-        <style>
-
-            body, html {
-                height: 100%;
-                margin: 0;
-                overflow: hidden;
-            }
-            footer {
-                background-color: #343a40; /* Change this to your preferred background color */
-                color: white;
-                text-align: center;
-                padding: 10px;
-                position: fixed;
-                bottom: 0;
-                width: 100%;
-            }
-
-            
-
-            
-
-            
-
-            /* Profile Picture */
-            .profile-pic{
-            display: inline-block;
-            vertical-align: middle;
-                width: 50px;
-                height: 50px;
-                overflow: hidden;
-            border-radius: 50%;
-            }
-
-            .profile-pic img{
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            }
-            .profile-menu .dropdown-menu {
-            right: 0;
-            left: unset;
-            }
-            .profile-menu .fa-fw {
-            margin-right: 10px;
-            }
-
-            .toggle-change::after {
-            border-top: 0;
-            border-bottom: 0.3em solid;
-            }
-            .lovelobby-img {
-            width: 75px; /* Adjust the width as needed */
-            height: auto;
-            }
-            .lovelobby-text{
-                color: white;
-            }
-            .lobby{
-                color: white;
-            }
-
-            .gradient-custom-2 {
-                /* fallback for old browsers */
-                background: #fccb90;
-
-                /* Chrome 10-25, Safari 5.1-6 */
-                background: -webkit-linear-gradient(to right, #C850C0, #4158D0);
-
-                /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                background: linear-gradient(to right, #C850C0, #4158D0);
-            }
-
-            .nav-item{
-                font-size: 20px;
-            }
-
-            .profile-pic-account {
-            width: 100px; /* Adjust the size as needed */
-            height: 100px; /* Make sure it's a square for a circular shape */
-            border-radius: 50%;
-            overflow: hidden;
-        }
-        .profile-pic-account img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        .card{
-            height:500px;
-        }
-
-        .interest-tags{
-            border: 1px solid #4158D0;
-            padding: 5px; 
-            display: inline-block; 
-            border-radius: 5px; 
-            margin-right: 5px; 
-            
-        }
-        
-        
-
-            
-
-
-
-
-    
-
-
-
-        </style>
-
 
     </head>
     <body class="antialiased">

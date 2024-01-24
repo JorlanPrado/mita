@@ -34,6 +34,10 @@ Route::get('/userprofile', function () {
     return view('userprofile');
 });
 
+Route::get('/land', function () {
+    return view('land');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');

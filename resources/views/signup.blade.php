@@ -13,99 +13,10 @@
 
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="/css/signup.css" />
 
         <!-- Bootstrap Icons -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.19.0/font/bootstrap-icons.css" rel="stylesheet">
-
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: white;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                margin: 0;
-                height: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-
-            .full-height{
-                height: 100vh;
-            }
-
-            .gradient-custom-2 {
-                /* fallback for old browsers */
-                background: #fccb90;
-
-                /* Chrome 10-25, Safari 5.1-6 */
-                background: -webkit-linear-gradient(to bottom, #FE535C, #42C7EA);
-
-                /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                background: linear-gradient(to bottom, #FE535C, #42C7EA);
-            }
-
-            .gradient-custom-3 {
-                /* fallback for old browsers */
-                background: #fccb90;
-
-                /* Chrome 10-25, Safari 5.1-6 */
-                background: -webkit-linear-gradient(to right, #C850C0, #4158D0);
-
-                /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                background: linear-gradient(to right, #C850C0, #4158D0);
-                border: none;
-            }
-
-            @media (min-width: 768px) {
-                .gradient-form {
-                    height: 100vh !important;
-                }
-                }
-                @media (min-width: 769px) {
-                .gradient-custom-2 {
-                    border-top-right-radius: .3rem;
-                    border-bottom-right-radius: .3rem;
-                }
-            }
-
-            .btn-outline-custom-danger {
-                color:  #C850C0; /* Text color */
-                border-color:  #C850C0; /* Border color */
-            }
-
-            .btn-outline-custom-danger:hover {
-                color: white; /* Text color on hover */
-                background-color:  #C850C0; /* Background color on hover */
-                border-color:  #C850C0; /* Border color on hover */
-            }
-
-            .btn-login{
-                width: 100%;
-                border: none;
-            }
-            .section{
-                min-height: calc(100vh - 20px);
-                max-height: calc(100vh - 20px);
-            }
-
-
-            
-
-            
-
-            
-
-            
-
-            
-            
-
-            
-
-            
-        </style>
 
         
     </head>
