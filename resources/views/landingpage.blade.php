@@ -13,6 +13,7 @@
 
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- <link rel="resources\css\notifi.css" stylesheet="stylesheet"> -->
 
         <!-- Bootstrap Icons -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.19.0/font/bootstrap-icons.css" rel="stylesheet">
@@ -22,6 +23,7 @@
         <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js'>
 
         </script>
+        <!-- <script src='resources\js\notif.js'></script> -->
 
         <!-- Styles -->
         <style>
@@ -40,12 +42,6 @@
                 bottom: 0;
                 width: 100%;
             }
-
-            
-
-            
-
-            
 
             /* Profile Picture */
             .profile-pic{
@@ -485,6 +481,8 @@ ul {
 
 
 
+
+
     
 
 
@@ -523,7 +521,8 @@ ul {
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="userprofile"><i class="fa fa-user fa-fw"></i> Profile</a></li>
-                <li><a class="dropdown-item" href="#"><i class="fas fa-cog fa-fw"></i>Account</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-cog fa-fw"></i> Account</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-bell fa-fw"></i> Notification</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="LoveLobby"><i class="fas fa-sign-out-alt fa-fw"></i> Log Out</a></li>
             </ul>
@@ -532,6 +531,17 @@ ul {
         </div>
     </div>
     </nav>
+
+    <!-- <div class="screen-overlay" id="credentialsContainer">
+            <div class="login-credentials-container">
+                <span id="close">X</span>
+                <h2>Login Credentials</h2>
+                <label>Copy credentials</label>
+                <p><b>Username: </b>admin</p>
+                <p><b>Password: </b>password</p>
+            </div>
+    </div> -->
+
 
     <div class="container-fluid p-0">
 
