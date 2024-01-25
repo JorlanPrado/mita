@@ -91,27 +91,17 @@
                 <div class="row pt-1">
                 <div class="col-6 mb-3">
                     <h6>Username</h6>
-                    <p class="text-muted">Notnot<i class="mx-2" data-toggle="tooltip" data-placement="top" title="Edit Username"></i></p>
+                    <p class="text-muted">Notnot<i class="fas fa-edit edit-icon mx-2" data-toggle="tooltip" data-placement="top" title="Edit Username"></i></p>
+                  </div>
+                <div class="col-6 mb-3">
+                    <h6>Email</h6>
+                    <p class="text-muted">info@example.com<i class="fas fa-edit edit-icon mx-2" data-toggle="tooltip" data-placement="top" title="Edit Username"></i></p>
                   </div>
                   <div class="col-6 mb-3">
-                    <h6>Age</h6>
-                    <p class="text-muted">18 Years Old<i class="mx-2" data-toggle="tooltip" data-placement="top" title="Edit Age"></i></p>
-                  </div>
-
-                  <div class="col-6 mb-3">
-                    <h6>Gender</h6>
-                    <p class="text-muted">Male</p>
+                    <h6>Password</h6>
+                    <p class="text-muted">********<i class="fas fa-edit edit-icon mx-2" data-toggle="tooltip" data-placement="top" title="Edit Email"></i></p>
                   </div>
                 </div>
-                <h6>Interests</h6>
-                <hr class="mt-0 mb-4">
-                <div class="row pt-1">
-                  <div class="col-2 mb-3">
-                    <h6 class="interest-tags">Valorant</h6>
-                  </div>
-                  <div class="col-4 mb-3">
-                    <h6 class="interest-tags">League of Legends</h6>
-                  </div>
                 </div>
               </div>
             </div>
@@ -121,7 +111,6 @@
     </div>
   </div>
 </section>
-
 
 <!-- Modal Notification -->
 
@@ -153,6 +142,8 @@
             </div>
         </div>
         </div>
+
+
 
     <footer class="gradient-custom-2 text-light text-center py-2 ">
         <p style>&copy; 2023 Dashboard. All rights reserved.</p>

@@ -13,7 +13,6 @@
 
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
         <link rel="stylesheet" href="/css/main.css" />
 
 
@@ -24,6 +23,29 @@
 
 
         <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js'></script>
+
+        <!-- Bootstrap JavaScript and Popper.js -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Add an event listener for tab change
+            const tab1 = document.getElementById('tab1');
+            const tab2 = document.getElementById('tab2');
+
+            document.getElementById('tab1-tab').addEventListener('click', function () {
+                tab1.style.display = 'block';
+                tab2.style.display = 'none';
+            });
+
+            document.getElementById('tab2-tab').addEventListener('click', function () {
+                tab1.style.display = 'none';
+                tab2.style.display = 'block';
+            });
+        });
+    </script>
 
 
     </head>
@@ -40,7 +62,7 @@
             <div class="nav-item">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-4 mt-2">
                 <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="homepage">Home</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link" href="#">About Us</a>
@@ -57,8 +79,8 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="userprofile"><i class="fa fa-user fa-fw"></i> Profile</a></li>
-                <li><a class="dropdown-item" href="#"><i class="fa fa-cog fa-fw"></i> Account</a></li>
-                <li><a class="dropdown-item" href="#"><i class="fa fa-bell fa-fw"></i> Notification</a></li>
+                <li><a class="dropdown-item" href="account"><i class="fa fa-cog fa-fw"></i> Account</a></li>
+                <li><a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-bell fa-fw"></i> Notification</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="LoveLobby"><i class="fas fa-sign-out-alt fa-fw"></i> Log Out</a></li>
             </ul>
@@ -95,17 +117,32 @@
                     <div class="row no-gutters">
                         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-3 col-3">
                             <div class="users-container">
-                                <div class="chat-search-box">
-                                    <div class="input-group">
-                                        <input class="form-control" placeholder="Search">
-                                        <div class="input-group-btn">
-                                            <button type="button" class="btn btn-info">
-                                                <i class="fa fa-search"></i>
-                                            </button>
-                                        </div>
-                                    </div>
+
+                                
+                                
+                                <div class="container">
+                                    
+                                <div class="best-match input-group-btn pb-3">
+                                    <a href="#">
+                                        <button type="button" class="button-best-match gradient-custom-2 w-100">
+                                            <h2 class="start-button-matching">Start matching</h2>
+                                        </button>
+                                    </a>
                                 </div>
-                                <ul class="users">
+
+                                    
+                                    <ul class="nav nav-tabs" id="myTabs">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" id="tab1-tab" data-bs-toggle="tab" href="#tab1">Lobby</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="tab2-tab" data-bs-toggle="tab" href="#tab2">Messages</a>
+                                        </li>
+                                    </ul>
+
+                                <div class="tab-content mt-2">
+                                    <div class="tab-pane fade show active" id="tab1">
+                                    <ul class="users">
                                     <li class="person" data-chat="person1">
                                         <div class="user">
                                             <img src="https://www.bootdey.com/img/Content/avatar/avatar3.png" alt="Retail Admin">
@@ -128,11 +165,11 @@
                                     </li>
                                     <li class="person active-user" data-chat="person2">
                                         <div class="user">
-                                            <img src="https://www.bootdey.com/img/Content/avatar/avatar2.png" alt="Retail Admin">
+                                            <img src="https://www.bootdey.com/img/Content/avatar/avatar3.png" alt="Retail Admin">
                                             <span class="status online"></span>
                                         </div>
                                         <p class="name-time">
-                                            <span class="name">Peter Gregor</span>
+                                            <span class="name">Emily Russell</span>
                                             <span class="time" style="color: green;">Active Now</span>
                                         </p>
                                     </li>
@@ -219,6 +256,77 @@
                                 </ul>
                             </div>
                         </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="tab2">
+                                        
+                                        <ul class="users">
+                                    <li class="person" data-chat="person1">
+                                        <div class="user">
+                                            <img src="https://www.bootdey.com/img/Content/avatar/avatar3.png" alt="Retail Admin">
+                                            <span class="status online"></span>
+                                        </div>
+                                        <p class="name-time">
+                                            <span class="name">Steve Bangalter</span>
+                                            <span class="time" style="color: green;">Active Now </span>
+                                        </p>
+                                    </li>
+                                    <li class="person" data-chat="person1">
+                                        <div class="user">
+                                            <img src="https://www.bootdey.com/img/Content/avatar/avatar1.png" alt="Retail Admin">
+                                            <span class="status online"></span>
+                                        </div>
+                                        <p class="name-time">
+                                            <span class="name">Steve Bangalter</span>
+                                            <span class="time" style="color: green;">Active Now</span>
+                                        </p>
+                                    </li>
+                                    <li class="person active-user" data-chat="person2">
+                                        <div class="user">
+                                            <img src="https://www.bootdey.com/img/Content/avatar/avatar2.png" alt="Retail Admin">
+                                            <span class="status online"></span>
+                                        </div>
+                                        <p class="name-time">
+                                            <span class="name">Emily Russell</span>
+                                            <span class="time" style="color: green;">Active Now</span>
+                                        </p>
+                                    </li>
+                                    <li class="person" data-chat="person3">
+                                        <div class="user">
+                                            <img src="https://www.bootdey.com/img/Content/avatar/avatar3.png" alt="Retail Admin">
+                                            <span class="status online"></span>
+                                        </div>
+                                        <p class="name-time">
+                                            <span class="name">Jessica Larson</span>
+                                            <span class="time" style="color: green;">Active Now</span>
+                                        </p>
+                                    </li>
+                                    <li class="person" data-chat="person4">
+                                        <div class="user">
+                                            <img src="https://www.bootdey.com/img/Content/avatar/avatar4.png" alt="Retail Admin">
+                                            <span class="status online"></span>
+                                        </div>
+                                        <p class="name-time">
+                                            <span class="name">Lisa Guerrero</span>
+                                            <span class="time" style="color: green;">Active Now</span>
+                                        </p>
+                                    </li>
+                                    <li class="person" data-chat="person5">
+                                        <div class="user">
+                                            <img src="https://www.bootdey.com/img/Content/avatar/avatar5.png" alt="Retail Admin">
+                                            <span class="status online"></span>
+                                        </div>
+                                        <p class="name-time">
+                                            <span class="name">Michael Jordan</span>
+                                            <span class="time" style="color: green;">Active Now</span>
+                                        </p>
+                                    </li>
+                                    
+                                </ul>
+                                    </div>
+                                </div>
+                            </div>
+                                
+                                
                         <div class="col-xl-8 col-lg-8 col-md-8 col-sm-9 col-9">
                             <div class="selected-user">
                                 <span>To: <span class="name"><a href="https://www.facebook.com/Budongggg" style="text-decoration: none;">Emily Russell</a></span></span>
@@ -297,7 +405,6 @@
                                             <div class="chat-name">Joyse</div>
                                         </div>
                                     </li>
-                                    
                                 </ul>
                                 
                             </div>
@@ -314,10 +421,41 @@
         </div>
         <!-- Row end -->
 
-    </div>
-    <!-- Content wrapper end -->
+        <!-- Modal Notification -->
 
-    </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Notifications</h5>
+            </div>
+            <div class="col-lg-1 g-0">
+                <div class="modal-body">
+                    Notif1
+                </div>
+                <div class="modal-body">
+                    Notif2
+                </div>
+                <div class="modal-body">
+                    Notif3
+                </div>
+                <div class="modal-body">
+                    Notif4
+                </div>
+            </div>
+        
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Mark as Read</button>
+            </div>
+            </div>
+        </div>
+        </div>
+        
+
+
+
+        
 
     
         

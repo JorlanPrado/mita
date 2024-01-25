@@ -453,3 +453,11 @@ ul {
     height: 60px;
     width: 98%;
 }
+.button-best-match{
+    border: none;
+    color: white;
+    border-radius: 8px;
+    height: 60px;
+    margin: 0;
+}
+
