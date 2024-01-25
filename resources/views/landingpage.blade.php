@@ -13,12 +13,16 @@
 
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
         <link rel="stylesheet" href="/css/main.css" />
+
 
         <!-- Bootstrap Icons -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.19.0/font/bootstrap-icons.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
         <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js'></script>
 
 
@@ -53,7 +57,8 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="userprofile"><i class="fa fa-user fa-fw"></i> Profile</a></li>
-                <li><a class="dropdown-item" href="#"><i class="fas fa-cog fa-fw"></i>Account</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-cog fa-fw"></i> Account</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-bell fa-fw"></i> Notification</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="LoveLobby"><i class="fas fa-sign-out-alt fa-fw"></i> Log Out</a></li>
             </ul>
@@ -62,6 +67,17 @@
         </div>
     </div>
     </nav>
+
+    <!-- <div class="screen-overlay" id="credentialsContainer">
+            <div class="login-credentials-container">
+                <span id="close">X</span>
+                <h2>Login Credentials</h2>
+                <label>Copy credentials</label>
+                <p><b>Username: </b>admin</p>
+                <p><b>Password: </b>password</p>
+            </div>
+    </div> -->
+
 
     <div class="container-fluid p-0">
 

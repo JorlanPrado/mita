@@ -53,6 +53,7 @@
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="userprofile"><i class="fa fa-user fa-fw"></i> Profile</a></li>
                 <li><a class="dropdown-item" href="#"><i class="fas fa-cog fa-fw"></i>Account</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-bell fa-fw"></i> Notification</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="LoveLobby"><i class="fas fa-sign-out-alt fa-fw"></i> Log Out</a></li>
             </ul>
