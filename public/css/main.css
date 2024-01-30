@@ -460,4 +460,35 @@ ul {
     height: 60px;
     margin: 0;
 }
+.startmatching-gradient{
 
+    height: 60px;
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, #C850C0, #4158D0);
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #C850C0, #4158D0);
+    border-radius: 6px 6px 0 0;
+}
+.startmatching-gradient .modal-title {
+    margin-left: 20px;
+    margin-top: 10px;
+    color: white;
+}
+
+.matching-btn-danger {
+    border-radius: 6px 6px 6px 6px;
+    color:  #C850C0; /* Text color */
+    border-color:  #C850C0; /* Border color */
+}
+
+.matching-btn-danger:hover {
+    color: white; /* Text color on hover */
+    background-color:  #C850C0; /* Background color on hover */
+    border-color:  #C850C0; /* Border color on hover */
+}
+
+.modal-footer .matching-btn-danger{
+    font-size: 15px;
+    font-weight: bold;
+}

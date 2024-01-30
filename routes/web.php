@@ -46,6 +46,27 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
+Route::get('/aboutus', function () {
+    return view('aboutus');
+});
+Route::get('/others', function () {
+    return view('otheruserprofile');
+});
+Route::get('/admin', function () {
+    return view('admin');
+});
+Route::get('/adminchart', function () {
+    return view('adminchart');
+});
+Route::get('/admintable', function () {
+    return view('admintable');
+});
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
+
+
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');

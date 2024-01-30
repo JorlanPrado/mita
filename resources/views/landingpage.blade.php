@@ -65,7 +65,7 @@
                 <a class="nav-link active" aria-current="page" href="homepage">Home</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
+                <a class="nav-link" href="aboutus">About Us</a>
                 </li>
                 </ul>
             </div>
@@ -124,7 +124,7 @@
                                     
                                 <div class="best-match input-group-btn pb-3">
                                     <a href="#">
-                                        <button type="button" class="button-best-match gradient-custom-2 w-100">
+                                        <button type="button" class="button-best-match gradient-custom-2 w-100" data-toggle="modal" data-target="#matchingModal">
                                             <h2 class="start-button-matching">Start matching</h2>
                                         </button>
                                     </a>
@@ -145,7 +145,7 @@
                                     <ul class="users">
                                     <li class="person" data-chat="person1">
                                         <div class="user">
-                                            <img src="https://www.bootdey.com/img/Content/avatar/avatar3.png" alt="Retail Admin">
+                                            <a href="others"><img src="https://www.bootdey.com/img/Content/avatar/avatar3.png" alt="Retail Admin"></a>
                                             <span class="status online"></span>
                                         </div>
                                         <p class="name-time">
@@ -165,7 +165,7 @@
                                     </li>
                                     <li class="person active-user" data-chat="person2">
                                         <div class="user">
-                                            <img src="https://www.bootdey.com/img/Content/avatar/avatar3.png" alt="Retail Admin">
+                                            <a href="others"><img src="https://www.bootdey.com/img/Content/avatar/avatar3.png" alt="Retail Admin"></a>
                                             <span class="status online"></span>
                                         </div>
                                         <p class="name-time">
@@ -175,7 +175,7 @@
                                     </li>
                                     <li class="person" data-chat="person3">
                                         <div class="user">
-                                            <img src="https://www.bootdey.com/img/Content/avatar/avatar3.png" alt="Retail Admin">
+                                            <a href="others"><img src="https://www.bootdey.com/img/Content/avatar/avatar3.png" alt="Retail Admin"></a>
                                             <span class="status online"></span>
                                         </div>
                                         <p class="name-time">
@@ -262,7 +262,7 @@
                                         <ul class="users">
                                     <li class="person" data-chat="person1">
                                         <div class="user">
-                                            <img src="https://www.bootdey.com/img/Content/avatar/avatar3.png" alt="Retail Admin">
+                                            <a href="others"><img src="https://www.bootdey.com/img/Content/avatar/avatar3.png" alt="Retail Admin"></a>
                                             <span class="status online"></span>
                                         </div>
                                         <p class="name-time">
@@ -292,7 +292,7 @@
                                     </li>
                                     <li class="person" data-chat="person3">
                                         <div class="user">
-                                            <img src="https://www.bootdey.com/img/Content/avatar/avatar3.png" alt="Retail Admin">
+                                            <a href="others"><img src="https://www.bootdey.com/img/Content/avatar/avatar3.png" alt="Retail Admin"></a>
                                             <span class="status online"></span>
                                         </div>
                                         <p class="name-time">
@@ -329,13 +329,13 @@
                                 
                         <div class="col-xl-8 col-lg-8 col-md-8 col-sm-9 col-9">
                             <div class="selected-user">
-                                <span>To: <span class="name"><a href="https://www.facebook.com/Budongggg" style="text-decoration: none;">Emily Russell</a></span></span>
+                                <span>To: <span class="name"><a href="others" style="text-decoration: none;">Emily Russell</a></span></span>
                             </div>
                             <div class="chat-container">
                                 <ul class="chat-box chatContainerScroll">
                                     <li class="chat-left">
                                         <div class="chat-avatar">
-                                            <a href="https://www.facebook.com/Budongggg"><img src="https://www.bootdey.com/img/Content/avatar/avatar3.png" alt="Retail Admin"></a>
+                                            <a href="others"><img src="https://www.bootdey.com/img/Content/avatar/avatar3.png" alt="Retail Admin"></a>
                                             <div class="chat-name">Russell</div>
                                         </div>
                                         <div class="chat-text">Hello, I'm Russell.
@@ -347,13 +347,13 @@
                                         <div class="chat-text">Hi, Russell
                                             <br> I need more information about Developer Plan.</div>
                                         <div class="chat-avatar">
-                                            <img src="https://www.bootdey.com/img/Content/avatar/avatar3.png" alt="Retail Admin">
+                                            <img src="https://www.bootdey.com/img/Content/avatar/avatar5.png" alt="Retail Admin">
                                             <div class="chat-name">Sam</div>
                                         </div>
                                     </li>
                                     <li class="chat-left">
                                         <div class="chat-avatar">
-                                            <img src="https://www.bootdey.com/img/Content/avatar/avatar3.png" alt="Retail Admin">
+                                            <a href="others"><img src="https://www.bootdey.com/img/Content/avatar/avatar3.png" alt="Retail Admin"></a>
                                             <div class="chat-name">Russell</div>
                                         </div>
                                         <div class="chat-text">Are we meeting today?
@@ -447,6 +447,69 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 <button type="button" class="btn btn-primary">Mark as Read</button>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- Modal Matching -->
+
+        <div class="modal fade" id="matchingModal" tabindex="-1" role="dialog" aria-labelledby="matchingodalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                <div class= "startmatching-gradient">
+                    <h5 class="modal-title" id="matchingModalLabel">Matching Interests</h5>
+                </div>
+                <div class="col-lg-7 col-md-2 col-sm-3 col-6 g-0">
+                    <div class="modal-body d-flex align-items-center">
+                        <input type="checkbox" class="notif-checkbox" id="checkboxMobileLegends">
+                        <label for="checkboxMobileLegends" class="ms-2">Mobile Legends</label>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <input type="checkbox" class="notif-checkbox" id="checkboxCallOfDuty">
+                        <label for="checkboxCallOfDuty" class="ms-2">Call of Duty</label>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <input type="checkbox" class="notif-checkbox" id="checkboxValorant">
+                        <label for="checkboxValorant" class="ms-2">Valorant</label>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <input type="checkbox" class="notif-checkbox" id="checkboxLeagueOfLegends">
+                        <label for="checkboxLeagueOfLegends" class="ms-2">League Of Legends</label>
+                    </div>
+                </div>
+                
+                
+            
+                <div class="modal-footer">
+                    <button type="button" class="matching-btn-danger" data-dismiss="modal" data-toggle="modal" data-target="#ageModal">Next</button>
+                </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Modal Matching Age -->
+
+        <div class="modal fade" id="ageModal" tabindex="-1" role="dialog" aria-labelledby="ageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+            <div class= "startmatching-gradient">
+                <h5 class="modal-title" id="ageModalLabel" >Age</h5>
+            </div>
+            <div class="col-lg-1 g-0">
+                <div class="modal-body">
+                    <label for="age">Min:</label>
+                    <input type="number" id="age" name="age" min="18" max="80">
+                </div>
+                <div class="modal-body">
+                    <label for="age">Max:</label>
+                    <input type="number" id="age" name="age" min="18" max="80">
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="matching-btn-danger" data-dismiss="modal">Start Matching!</button>
             </div>
             </div>
         </div>
